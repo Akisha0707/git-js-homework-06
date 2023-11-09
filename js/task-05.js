@@ -4,8 +4,7 @@ const textOutput = document.querySelector("#name-output");
 textInput.addEventListener("input", textChange);
 
 function textChange(event) {
-  textInput.textContent === ""
+  textInput.value === ""
     ? (textOutput.textContent = event.currentTarget.value)
     : (textOutput.textContent = "Anonymous");
-
 }
